@@ -5,6 +5,6 @@ declare -a Arch=("amd64" "ppc64le")
 for arch in "${Arch[@]}"
 do
 	echo "Buiding image for $arch"
-	docker build --build-arg ARCH=$arch -t bagalvitthal/statsd:$arch -f ../ .
+	docker build --build-arg ARCH=$arch -t bagalvitthal/statsd:$arch -f ../Dockerfile .
 done
 
