@@ -1,4 +1,6 @@
-FROM node:10.15.3
+ARG ARCH=""
+
+FROM ${ARCH}/node:10.15.3
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app

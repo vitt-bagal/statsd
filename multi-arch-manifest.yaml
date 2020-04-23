@@ -1,0 +1,11 @@
+image: bagalvitthal/statsd:latest
+manifests:
+  - image: bagalvitthal/statsd:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: bagalvitthal/statsd:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8

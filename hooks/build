@@ -1,0 +1,10 @@
+#!/bin/bash
+
+declare -a Arch=("amd64" "arm64v8")
+
+for arch in "${Arch[@]}"
+do
+	echo "Buiding image for $arch"
+	docker build --build-arg ARCH=$arch -t bagalvitthal/statsd:$arch -f ../ .
+done
+
