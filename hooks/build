@@ -1,10 +1,10 @@
 #!/bin/bash
 
-declare -a Arch=("amd64" "ppc64le")
+declare -a Arch=("amd64" "ppc64le" "s390x")
 
 for arch in "${Arch[@]}"
 do
 	echo "Buiding image for $arch"
-	docker build --build-arg ARCH=$arch -t bagalvitthal/statsd:$arch -f ../Dockerfile .
+	docker build --build-arg ARCH=$arch -t bagalvitthal/statsd:$arch .
 done
 

@@ -8,3 +8,7 @@ manifests:
     platform:
       architecture: ppc64le
       os: linux
+  - image: bagalvitthal/statsd:s390x
+    platform:
+      architecture: s390x
+      os: linux
