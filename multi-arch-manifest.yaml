@@ -4,8 +4,7 @@ manifests:
     platform:
       architecture: amd64
       os: linux
-  - image: bagalvitthal/statsd:arm64/v8
+  - image: bagalvitthal/statsd:ppc64le
     platform:
-      architecture: arm64
+      architecture: ppc64le
       os: linux
-      variant: v8
