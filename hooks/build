@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -a Arch=("amd64" "arm64v8")
+declare -a Arch=("amd64" "arm64/v8")
 
 for arch in "${Arch[@]}"
 do
